@@ -1,0 +1,7 @@
+<h1>Camper Page</h1>
+
+<p>Name: <%= @camper.name %></p>
+<p>Age: <%= @camper.age %></p>
+<% @camper.activities.each do |activity|  %>
+<%= activity.name %>
+<% end %>
